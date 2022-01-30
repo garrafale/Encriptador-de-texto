@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encriptador de texto</title>
+  <link rel="icon" href="teclado.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id='fondo-pagina'>
+  <h1 class="titulo">Encriptador de texto</h1>
+
+  <main class="main">
+    <section class="form box">
+      <form action="">
+      	<b><label id="encabezado-msj-orig" for="input-texto">Mensaje original (solamente cambia letras minúsculas y sin tildes)</label></b>
+        <input class="text-input" type="text" name="msj-orig" id="msj-orig" placeholder="Ingrese el texto original aquí">
+        <button id="btn-encriptar">Encriptar</button>
+        <button id="btn-desencriptar">Desencriptar</button>
+      </form>
+    </section>
+    
+      <section class="msj box">
+      <form name = "formResult" id = "formResult">
+      <b><label id="encabezado-msj-result" for="input-texto">Mensaje encriptado/desencriptado</label></b>
+      <input class="text-input" type="text" id="msj-result" name="resultFinal"></input>
+      <button id="btn-copiar" onclick="copiarAlPortapapeles()">Copiar texto</button>
+    </section>
+  </main>
+
+  <script src="copiar-portapapeles.js"></script>
+  <script src="encriptar.js"></script>
+  <script src="desencriptar.js"></script>
+</body>
+<br>
+<center>Desarrollado por Alejandro Luna</center>
+</html>
